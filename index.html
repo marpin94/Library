@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> My Library </h1>
+    <button id='addbookbutton'> Add a Book </button>
+    <div id='bookform'>
+        <form id='addbookform' type='submit'>
+            <input class='forminput' id='titleinput' type="text" placeholder="Title" autocomplete="off">
+            <input class='forminput' id='authorinput' type="text" placeholder="Author" autocomplete="off">
+            <input class='forminput' id='pages' type="number" placeholder="Pages" autocomplete="off">
+            <div class="forminput" id='check'>
+                <label for="israd"> Read? </label> 
+                <input type="checkbox" id="isread">
+            </div>
+        </br>
+            <button class="formbutton" id="submit">Submit</button>
+            <button  class="formbutton" id="closemodal">Close</button>
+        </form>
+    </div>
+    <div id='root'></div>
+    <script src="script.js"></script>
+</body>
+</html>
