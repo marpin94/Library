@@ -1,13 +1,15 @@
 let library;
 
-//BOOK PROTOTYPE -- TODO CHANGE TO CLASS??
+//Init book class
 
-function Book(title, author, pages, id, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.id = id
-    this.read = read
+class Book  {
+    constructor(title,author,pages,id,read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.id = id
+        this.read = read
+    }
 }
 
 function addToLibrary(book) {
