@@ -33,7 +33,8 @@ h1, h3, p {
   }
 
 #addbookbutton {
-margin: 2px;
+margin-left: auto;
+margin-right: auto;
 padding:16px;
 border-radius: 4px;
 display: block;
