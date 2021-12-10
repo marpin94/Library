@@ -57,20 +57,19 @@ function displayLibrary(item) {
         const button = document.createElement('button')
         button.id = `deletebtn`
         button.className = 'deletebtn'
-        button.textContent = "X"
+        button.textContent = "Remove Book"
         button.onclick = () => deleteBook(item)
         
 
         container.appendChild(card)
 
-        card.appendChild(button)
+
         card.appendChild(h1)
         card.appendChild(hr)
         card.appendChild(h3)
         card.appendChild(p)
+        card.appendChild(button)
         card.appendChild(read)
-       
-
         
 }
 
@@ -97,21 +96,19 @@ function updateDisplay(newBook) {
     const button = document.createElement('button')
     button.id = 'deletebtn'
     button.className = 'deletebtn'
-    button.textContent = "X"
+    button.textContent = "Remove Book"
     button.onclick = () => deleteBook(newBook)
     
 
     container.appendChild(card)
 
-    card.appendChild(button)
+    
     card.appendChild(h1)
     card.appendChild(hr)
     card.appendChild(h3)
     card.appendChild(p)
-    card.appendChild(read)
-    
-
-        
+    card.appendChild(button)
+    card.appendChild(read)       
 }
 
 
@@ -138,6 +135,7 @@ document.getElementById('addbookform').addEventListener('submit', function(e){
     addToLibrary(newBook);
     updateLocal();
     updateDisplay(newBook);
+    document.getElementById('bookform').style.display = 'none'
     e.target.reset();
    
 })
