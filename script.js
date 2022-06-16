@@ -53,6 +53,7 @@ function displayLibrary(item) {
 
         const read = document.createElement('p');
         read.textContent =  item.read ? "Read": "Not Read"
+   
 
         const button = document.createElement('button')
         button.id = `deletebtn`
@@ -89,7 +90,7 @@ function updateDisplay(newBook) {
 
     const p = document.createElement('p');
     p.textContent = newBook.pages
-
+   
     const read = document.createElement('p');
     read.textContent = newBook.read ? "Read": "Not Read"
 
